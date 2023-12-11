@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/movies" element={<Index />} />
+        <Route path="movies" element={<Index />} />
         <Route path="basket" element={<Basket />} />
         <Route path="/readmore/:id" element={<ReadMore />} />
       </Routes>
