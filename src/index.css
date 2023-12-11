@@ -1,13 +1,381 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.index {
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.index .mavi {
+  width: 100%;
+  color: aliceblue;
+  text-align: left;
+  font-size: 50px;
+  padding: 3px;
+  background-color: rgb(22, 57, 88);
+}
+
+.index .mavi p {
+  font-family: 'Lilita One', sans-serif;
+}
+
+.index .white {
+  display: flex;
+  justify-content: space-around;
+}
+
+.index .white .sol {
+  width: 50%;
+}
+
+.index .white .sol .search {
+  width: 80%;
+  text-align: left;
+  padding: 20px;
+}
+
+.index .white .sol .search input {
+  padding: 10px;
+  margin: 10px 5px 0px 0px;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.index .white .sol .search button {
+  padding: 5px;
+  background-color: #4c6baf;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.index .white .sol .items {
+  padding: 20px;
+}
+
+.index .white .sol .items img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.index .white .sol .items .item {
+  width: 80%;
+  height: 200px;
+  overflow: hidden;
+  margin: 30px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: antiquewhite;
+}
+
+.index .white .sol .items .item .about {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index .white .sol .items .item .about button {
+  padding: 5px;
+  background-color: #4c6baf;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.index .white .sag {
+  width: 30%;
+  margin-top: 30px;
+}
+
+.index .white .sag .list {
+  padding: 10px;
+  border: 2px solid gray;
+}
+
+.index .white .sag .list button {
+  padding: 5px;
+  background-color: #4c6baf;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+}
+
+.index .white .sag .list input {
+  width: 100%;
+  padding: 10px 18px;
+  margin: 8px 0;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.index .white .sag .list .items .item {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.index .white .sag .list .items .item i {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 0.2cm;
+}
+
+.index .white .sag .list .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.basket .container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.basket .container h3 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.basket .container .divs .items {
+  border: 2px solid gainsboro;
+  margin: 10px;
+}
+
+.basket .container .divs .items .line {
+  background-color: rgb(187, 225, 241);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 21px;
+  color: #1b53cb;
+}
+
+.basket .container .divs .items .below .item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.basket .container .divs .items .below .item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: 30px;
+}
+
+.basket .container button {
+  background-color: #4c78af;
+  padding: 14px 20px;
+  margin: 8px 0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.basket .container button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.readmore {
+  height: 100vh;
+  background-color: rgb(3, 41, 66);
+  padding-top: 80px;
+  color: #d6dff3;
+  text-align: center;
+  position: relative;
+}
+
+.readmore .container {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.readmore img {
+  width: 20%;
+  border-radius: 0.3cm;
+  margin: 30px;
+}
+
+.readmore .container button {
+  background-color: #4c78af;
+  padding: 14px 20px;
+  margin: 8px 0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.readmore>a {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.readmore>a button {
+  font-size: 21px;
+  background-color: #784caf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 963px) and (min-width: 376px) {
+  .index .mavi p {
+    font-size: 40px;
+  }
+
+  .index .white .sol .search {
+    width: 100%;
+  }
+
+  .index .white .sol .search input {
+    width: 60%;
+  }
+
+  .index .white .sol .items .item {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .index .white .sol .items .item img {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .index .white .sol .items .item .about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 890px) and (min-width: 376px) {
+  .index .mavi p {
+    font-size: 30px;
+  }
+
+  .index .white .sag i {
+    padding: 0px;
+  }
+
+  .index .white .sag .list .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .index .white .sag .list .buttons button {
+    font-size: 14px;
+  }
+
+  .index .white .sag .list .buttons button:last-child {
+    width: 100%;
+  }
+
+  .index .white .sol .items {
+    padding: 0px;
+  }
+
+  .index .white .sol .items .item {
+    padding: 10px;
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 376px) {
+  .index .white .sol .items .item .about button {
+    font-size: 13px;
+  }
+
+  .index .white .sol .search input,
+  .index .white .sol .search button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 701px) {
+  .readmore img {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 701px) and (min-width: 601px) {
+  .readmore img {
+    width: 40%;
+  }
+
+  .readmore {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 301px) {
+  .readmore img {
+    width: 55%;
+  }
+
+  .readmore {
+    padding-top: 100px;
+  }
+
+  .basket .container h3 {
+    font-size: 30px;
+  }
+
+  .basket .container button {
+    padding: 8px;
+    top: 5px;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.myClass {
+  transform: rotate(180deg);
+}
+
+.block {
+  display: none;
 }
